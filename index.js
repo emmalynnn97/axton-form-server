@@ -35,6 +35,7 @@ app.post('/contact', (req, res) => {
       console.log('Email sent: ' + info.response);
     }
   });
+  res.redirect(307, '/https://www.axtontruck.com/');
 })
 app.listen(port, () => {
     console.log(`Emma Contact server is listening on port ${port}`)
