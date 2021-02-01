@@ -24,7 +24,7 @@ app.post('/contact', (req, res) => {
   });
   var mailOptions = {
     from: process.env.EMAIL_USERNAME,
-    to: 'emma@mcfaddengavender.com',
+    to: 'info@axtontruck.com',
     subject: `New email from ${req.body.name}`,
     html: `<h3>Subject: ${req.body.subject}</h3><br/><h3>Email: ${req.body.email}</h3><br/><h3>Phone: ${req.body.phone}</h3><br/><p><strong>Message: </strong>${req.body.message}</p>`
   };
